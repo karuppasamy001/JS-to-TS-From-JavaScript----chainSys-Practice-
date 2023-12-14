@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Crud </title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+        .hidden {
+            display: none; 
+            position: absolute; 
+            top: 150px; 
+            /* left: 150x;  */
+            border: 1px solid black;
+            padding: 10px;
+            background-color: lightgray;
+            /* display: block; */
+            height: 500px;
+            margin-left: 300;
+            margin-top: 100;
+            width: 900px;
+        }
+        .box{
+            margin-top: 100;
+        }
+        .button-div{
+            left: 550;
+        }
+        .btn{
+            padding: 10;
+            margin-left: 10;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;"> PRODUCT CRUD </h1>
+
+        <button id="create" class="btn"> CREATE </button>
+        <button id="retrieve" class="btn"> RETRIEVE </button>
+        <button id="update" class="btn"> UPDATE </button>
+        <button id="delete" class="btn"> DELETE </button>
+
+
+        <div id="div1" class="hidden">
+            <h1> CREATE </h1>
+            <div>
+                <label for="id"> id : </label><input type="number" name="" id="id"><br/>
+                <label for="name"> Name : </label><input type="text" id="name"><br/>
+                <label for="password"> password : </label><input type="text" id="password"><br/>
+                <label for="email"> Email : </label><input type="text" id="email"><br/>
+                <label for="phone"> Phone : </label><input type="number" id="phone"><br/>
+                <button id="submitCreate"> submit </button>
+            </div>
+        </div>
+
+
+        <div id="div2" class="hidden">
+            <H1> RETRIEVE </H1>
+            <label for="idSearch">Search id : </label><input type="text" id="idSearch">
+            <button id="searchName"> Search </button>
+            <ul id="ul">
+
+            </ul>
+        </div>
+
+
+        <div id="div3" class="hidden">
+            <H1>UPDATE</H1>
+            <label for="idSearch1">Enter The id : </label><input type="text" id="idSearch1"><br/>
+            <label for="selectName"> Select What to Update </label>
+            <select id="selectName">
+                <option value="name"> name </option>
+                <option value="password"> password </option>
+                <option value="email"> email </option>
+                <option value="phone"> phone </option>
+            </select>
+            <label for="newValue"> New Value : </label><input type="text" id="newValue"><br/>
+            <button id="updateSubmit"> update </button>
+        </div>
+
+
+
+        <div id="div4" class="hidden">
+            <H1>DELETE</H1>
+            <label for="idDelete"> Enter the name of user you want to delete : </label><input type="text" id="idDelete">
+            <button id="submitDelete"> Delete </button>
+        </div>
+    
+
+    <script src="../../dist/ProductCrud.js">
+
+        
+        
+    </script>
+</body>
+</html>
